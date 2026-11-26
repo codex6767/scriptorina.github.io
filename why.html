@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="why.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2016/12/31/00/43/computer-1941945_1280.png">
+    <title>Scriptorina</title>
+</head>
+<body>
+    <header>
+    <h3>Scriptorina</h3><span class="description">By VSW | Updating the future</span>
+    </header>
+    <div id="card" class="card">
+    <form action="#"> 
+    <h1>Login</h1>
+    <p id="msg"></p>
+    <div class="field">
+        <i class="bx bx-user"></i>
+        <input type="text" id="user" maxlength="20" placeholder=" ">
+        <label>Username</label>
+    </div>
+
+    <div class="field">
+        <i class="bx bx-lock"></i>
+        <input type="password" id="pass" placeholder=" ">
+        <label>Password (1234)</label>
+    </div>
+    <button class="Login-btn" type="button" onclick="login()">Login</button>
+    </form>
+    </div>
+    <div id="home" style="display: none;">
+     <h1>Welcome, <span id="display-user"></span>!</h1>
+     <p class="idk">Welcome to the dashboard, <span id="display-user2"></span>!</p>
+     <br>
+     <p class="idk">We have some things we prepared for you, <span id="display-user3"></span>!<br>If you want more information, <a href="https://vsw-updating-the-future-about.ai.studio/">Click me!</a></p>
+     <br>
+     <p id="milestone"></p>
+     <h3>Clicks: <span id="score">0</span></h3>
+     <button class="cookie" onclick="Clicker()">&#127850;</button>
+     <div class="upgrades">
+     <button onclick="upgrade()">Upgrade - Cost: <span id="cost">20</span></button>
+     <button onclick="buyAuto()">Auto Clicker - Cost: <span id="auto-cost">50</span></button>
+     </div>
+     <button onclick="GETout()" class="Logout-btn">Logout</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
