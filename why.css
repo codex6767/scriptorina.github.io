@@ -226,10 +226,5 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 .card, #home {
-  justify-content: center;
-   flex-direction: column;
-    align-items: center;
-    display: flex;
-    min-height: 100vh;
     margin-top: 10px;
 }
