@@ -57,7 +57,7 @@ body {
     height: auto !important;
     min-height: unset !important;
     align-self: center;
-    padding: 40px 30px;
+    padding: 50px 40px;
     width: fit-content;
 }
 .card input {
@@ -218,6 +218,9 @@ header {
   z-index: 100;
 }
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   margin-top: auto;
   width: 100%;
   text-align: center;
@@ -229,8 +232,10 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 .card, #home {
-  justify-content: center;
-   flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     display: flex;
     min-height: 100vh;
