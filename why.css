@@ -55,6 +55,9 @@ body {
     border-radius: 30px;
     display: block;
     margin: auto;
+    height: auto;
+    min-height: unset;
+    padding: 40px 30px;
     width: fit-content;
 }
 .card input {
