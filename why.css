@@ -51,12 +51,12 @@ body {
         }
 .card {
     backdrop-filter: blur(10px);
-    padding: 80px 50px;
     border-radius: 30px;
     display: block;
     margin: auto;
-    height: auto;
-    min-height: unset;
+    height: auto !important;
+    min-height: unset !important;
+    align-self: center;
     padding: 40px 30px;
     width: fit-content;
 }
