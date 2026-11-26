@@ -231,4 +231,5 @@ footer {
     align-items: center;
     display: flex;
     min-height: 100vh;
+    margin-top: 10px;
 }
