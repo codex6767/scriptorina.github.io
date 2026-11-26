@@ -1,0 +1,231 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   justify-content: center;
+   flex-direction: column;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1687197180710-b2b9484a3c5f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+       /*Floating label*/
+            .field input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: white;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+        .field label {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 4px;
+            color: white;
+            pointer-events: none;
+            transition: 0.2s ease;
+        }
+        .field input:focus {
+            border-color: #0066cc;
+        }
+        .field input:focus + label,
+        .field input:not(:placeholder-shown) + label {
+            top: 0;
+            font-size: 12px;
+            color: white;
+        }
+        .field {
+            position: relative;
+            margin: 18px 0;
+        }
+.card {
+    backdrop-filter: blur(10px);
+    padding: 90px 50px;
+    border-radius: 30px;
+    display: block;
+    margin: 15px auto;
+    width: fit-content;
+}
+.card input {
+    background: transparent;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+button {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  padding: 14px 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  background: linear-gradient(38deg, #3d91ff 0%, #1218ce 100%);
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 6px 0 0 #255799;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms cubic-bezier(.2,.8,.2,1), box-shadow 120ms cubic-bezier(.2,.8,.2,1), filter 120ms cubic-bezier(.2,.8,.2,1);
+}
+
+button__icon {
+  display: inline-block;
+  transition: transform 120ms cubic-bezier(.2,.8,.2,1);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 7px 0 0 #255799;
+}
+
+button:hover .c__icon {
+  transform: translateX(3px);
+}
+
+button:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 0 #255799;
+  transition-duration: 60ms;
+}
+
+button:focus-visible {
+  outline: 3px solid #22c55e;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  button__icon {
+    transition: none;
+    animation: none;
+  }
+}
+#msg {
+  text-align: center;
+  color: red;
+}
+.card i {
+  text-align: center;
+}
+.field {
+  position: relative;
+  margin: 18px 0;
+}
+
+.field i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ccc;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 12px 12px 38px;
+  box-sizing: border-box;
+}
+
+.field label {
+  left: 38px;
+}
+.idk {
+  text-align: center;
+}
+#milestone {
+  color: blue;
+}
+.upgrades {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: #3d91ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h3, .cookie {
+  text-align: center;
+  user-select: none;
+}
+.cookie {
+  display: block;
+  margin: 15px auto;
+  width: fit-content;
+  border: none;
+  background: none;
+  font-size: 40px;
+  cursor: pointer;
+  box-shadow: none;
+  padding: 0;
+}
+.cookie:hover {
+  box-shadow: none;
+  transform: scale(1.19);
+}
+.cookie:active {
+  transform: scale(0.9);
+}
+#home {
+   padding: 50px 30px;
+   backdrop-filter: blur(10px);
+   border-radius: 50px;
+}
+.description {
+  text-align: center;
+  font-size: 10px;
+  color: #0066cc;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 18, 56, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 100;
+}
+footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #cfe2ff;
+  background: rgba(5, 18, 56, 0.7);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.card, #home {
+  margin-top: auto;
+  margin-bottom: auto;
+}
